@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:shrinkColumns="1"
+    tools:context=".MainActivity">
+    <TableRow
+        android:background="@color/colorgreen">
+        <TextView
+            android:id="@+id/text"
+            android:text="Các kiểu lập trình sự kiện"
+            android:textSize="25dp"
+            android:layout_span="2"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorwhite"
+
+            />
+    </TableRow>
+
+    <TableRow >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Số a:"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/editsoa"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:textSize="25dp"
+            android:layout_marginLeft="50dp"
+
+            />
+
+    </TableRow>
+    <TableRow >
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Số b:"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/editsob"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:textSize="25dp"
+            android:layout_marginLeft="50dp"
+
+            />
+
+    </TableRow>
+    <TableRow android:background="@color/colorgreen">
+        <TextView android:id="@+id/txtkq"
+                   android:layout_span="2"
+            android:textColor="@color/colorwhite"
+            android:gravity="center"
+            android:textSize="25dp"/>
+    </TableRow>
+    <Button
+        android:id="@+id/btntong2so"
+        android:text="Tổng 2 số"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:onClick="btn_tong2so"/>
+
+</TableLayout>
